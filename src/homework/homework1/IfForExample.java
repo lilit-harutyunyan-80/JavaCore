@@ -17,25 +17,20 @@ public class IfForExample {
 
             }
 
-            // 3 char example
-            char c = 66;
-            char d = 77;
-            System.out.println("c = " + c);
-            System.out.println("d = " + d);
+                //4 if example
 
-            //4 if example
+                int n, m;
+                n = 15;
+                m = 15;
+                if (n >= m) ;
+                System.out.println("n havasar e " + m);
+                if (n < m) ;
+                System.out.println("n havasar che " + m);
 
-            int n, m;
-            n = 15;
-            m = 15;
-            if (n >= m) ;
-            System.out.println("n havasar e " + m);
-            if (n < m) ;
-            System.out.println("n havasar che " + m);
-
+            }
         }
     }
-}
+
 
 
 
