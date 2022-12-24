@@ -11,10 +11,11 @@ public class IfForExample {
 
             // 2 for example
             int f = 5;
-            for (int i = 4; i < 10; i++) {
-                f = i + 1;
-                System.out.println(f);
-
+            int d = 15;
+            if (f < 15) {
+                for (int i = f; i <= d; i++) {
+                    System.out.println(i + " ");
+                }
             }
 
                 //4 if example
@@ -24,7 +25,7 @@ public class IfForExample {
                 m = 15;
                 if (n >= m) ;
                 System.out.println("n havasar e " + m);
-                if (n < m) ;
+                if (n <= m) ;
                 System.out.println("n havasar che " + m);
 
             }
