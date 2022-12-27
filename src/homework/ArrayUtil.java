@@ -10,7 +10,7 @@ public class ArrayUtil {
         System.out.println();
 
         int min = array[0];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (min > array[i]) {
                 min = array[i];
 
@@ -20,7 +20,7 @@ public class ArrayUtil {
         System.out.println("Min is: " + min);
 
         int max = array[0];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (max < array[i]) {
                 max = array[i];
             }
@@ -28,7 +28,55 @@ public class ArrayUtil {
         }
         System.out.println();
         System.out.println("max is: " + max);
-    }
+        System.out.println();
 
+// Տպել մասիվի զույգ թվերը
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.print(array[i] + ", ");
+            }
+        }
+        System.out.println();
+        System.out.println();
+
+// Տպել մասիվի կենտ թվերը
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 1) {
+                System.out.print(array[i] + ", ");
+            }
+        }
+        System.out.println();
+        System.out.println();
+
+//Տպել մասիվի թվերի գումարը
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        System.out.println(sum);
+        System.out.println();
+
+
+//Տպել մասիվի առաջին թիվը
+        System.out.println(array[0]);
+        System.out.println();
+
+
+// Տպել մասիվի վերջին թիվը
+        int lastIndex = array.length - 1;
+        System.out.println(array[lastIndex]);
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
