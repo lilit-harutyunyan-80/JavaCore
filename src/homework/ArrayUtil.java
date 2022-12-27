@@ -48,27 +48,48 @@ public class ArrayUtil {
         System.out.println();
         System.out.println();
 
-//Տպել մասիվի թվերի գումարը
-        int sum = 0;
+        //Տպել մասիվի զույգերի քանակը
+        int even = 0;
         for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+            if (array[i] % 2 == 0) {
+                even++;
+            }
         }
-        System.out.println(sum);
+        System.out.println("զույգերի քանակը = " + even);
+
+        //Տպել մասիվի կենտերի քանակը
+
+        int odd = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 1) {
+                odd++;
+            }
+        }
+        System.out.println("կենտերի քանակը = " + odd);
         System.out.println();
+
+//Տպել մասիվի թվերի գումարը
+            int sum = 0;
+            for (int i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            System.out.println(sum);
+            System.out.println();
 
 
 //Տպել մասիվի առաջին թիվը
-        System.out.println(array[0]);
-        System.out.println();
+            System.out.println(array[0]);
+            System.out.println();
 
 
 // Տպել մասիվի վերջին թիվը
-        int lastIndex = array.length - 1;
-        System.out.println(array[lastIndex]);
+            int lastIndex = array.length - 1;
+            System.out.println(array[lastIndex]);
 
 
+        }
     }
-}
+
 
 
 
