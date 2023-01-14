@@ -1,9 +1,9 @@
 package homework.homework5;
 
 public class ArraySort {
-    public static void main(String[] args) {
+
+    void ArraySortOne(int[] numbers) {
         System.out.println("Թվերը ներկայացնել աճման կարգով");
-        int[] numbers = {43, 55, 5, -9, 0, 12, 7, 65};
         int numOrder = 0;
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
@@ -16,8 +16,9 @@ public class ArraySort {
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
-        System.out.println();
+    }
 
+    void ArraySortTwo(int[] numbers) {
         System.out.println("Թվերը ներկայացնել նվազման կարգով");
         int numOrderRevers = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -32,3 +33,4 @@ public class ArraySort {
         }
     }
 }
+
