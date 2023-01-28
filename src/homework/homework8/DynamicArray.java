@@ -51,7 +51,7 @@ public class DynamicArray {
         }
     }
 
-    public void add(int index, int value) {
+    public void addByIndex(int index, int value) {
         int newVal = value;
         for (int i = index; i < size + 1; i++) {
             int tmp = newVal;

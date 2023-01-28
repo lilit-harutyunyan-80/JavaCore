@@ -31,7 +31,7 @@ public class DynamicArrayDemo {
         da.printArray();
         System.out.println();
         System.out.print("Add method: ");
-        da.add(5, 450);
+        da.addByIndex(5, 450);
         da.printArray();
 
 
