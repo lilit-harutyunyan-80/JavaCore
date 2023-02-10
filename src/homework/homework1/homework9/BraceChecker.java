@@ -4,7 +4,7 @@ public class BraceChecker {
     private final String text;
     private final Stack stack = new Stack();
 
-    BraceChecker(String text) {
+    public BraceChecker(String text) {
         this.text = text;
     }
 
@@ -40,7 +40,7 @@ public class BraceChecker {
                     chack = (char) stack.pop();
                     if (chack == '(' || chack == '[') {
                         System.out.println("opened " + chack + "but close " + c + "in index " + i);
-                    } else if (chack != '[') {
+                    } else if (chack != '{') {
                         System.out.println("Error closed " + chack + "but not opened");
                     }
                     break;

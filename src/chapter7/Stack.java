@@ -2,7 +2,7 @@ package chapter7;
 
 public class Stack {
 
-    private int stck[] = new int[10];
+    private int stack[] = new int[10];
     private int tos;
 
     Stack() {
@@ -13,7 +13,7 @@ public class Stack {
         if (tos == 9)
             System.out.println("Stek zapolnen. ");
         else
-            stck[++tos] = item;
+            stack[++tos] = item;
     }
 
     int pop() {
@@ -21,6 +21,6 @@ public class Stack {
             System.out.println("stek ne zagrujion. ");
             return 0;
         } else
-            return stck[tos--];
+            return stack[tos--];
     }
 }
