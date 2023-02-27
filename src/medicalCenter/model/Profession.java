@@ -2,21 +2,10 @@ package medicalCenter.model;
 
 public enum Profession {
 
-    FAMILY_PHYSICIANS("Poxosyan"),
-    INTERNISTS("Vardanyan"),
-    EMERGENCY_PHYSICIANS("Minasyan"),
-    PSYCHIATRISTS("Petrosyan");
+    FAMILY_PHYSICIANS,
+    INTERNISTS,
+    EMERGENCY_PHYSICIANS,
+    PSYCHIATRISTS
 
-    private String doctors;
 
-    Profession(String doctors) {
-        this.doctors = doctors;
-    }
-
-    public String getDoctors() {
-        return doctors;
-    }
-
-    Profession() {
-    }
 }

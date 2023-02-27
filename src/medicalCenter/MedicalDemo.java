@@ -70,8 +70,7 @@ public class MedicalDemo implements Commands {
         try {
             doctor.setProfession(Profession.valueOf(profStr));
             System.out.println(doctor.getProfession());
-            System.out.println("You choose " + doctor.getProfession().getDoctors() + " doctor");
-        } catch (IllegalArgumentException e) {
+           } catch (IllegalArgumentException e) {
             System.out.println("Please choose correct profession");
         }
     }
