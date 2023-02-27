@@ -10,6 +10,7 @@ public interface Commands {
     String ADD_PATIENTS = "5";
     String PRINT_ALL_PATIENTS_BY_DOCTOR = "6";
     String PRINT_TO_DAYS_PATIENTS = "7";
+    String PRINT_PROFESSION_BY_DOCTOR = "8";
 
 
 
@@ -18,10 +19,11 @@ public interface Commands {
         System.out.println("Please input "+ADD_DOCTOR+" for add doctor");
         System.out.println("Please input "+SEARCH_DOCTOR_BY_PROFESSION+" for search doctor by profession");
         System.out.println("Please input "+DELETE_DOCTOR_BY_ID+" for delete doctor by Id");
-        System.out.println("Please input "+CHANGE_DOCTOR_DATA_BY_ID+" for change doctor date by ID");
+        System.out.println("Please input "+CHANGE_DOCTOR_DATA_BY_ID+" for change doctor by ID");
         System.out.println("Please input "+ADD_PATIENTS+" for add patients");
         System.out.println("Please input "+PRINT_ALL_PATIENTS_BY_DOCTOR+" for print all patients");
         System.out.println("Please input "+PRINT_TO_DAYS_PATIENTS+" for print to days patients");
+        System.out.println("Please input "+PRINT_PROFESSION_BY_DOCTOR+ " for print all profession by doctor");
 
     }
 }
