@@ -67,9 +67,12 @@ public class MedicalDemo implements Commands {
             System.out.println(value);
         }
         String profStr = scanner.nextLine();
-
-        doctor.setProfession(Profession.valueOf(profStr));
-        System.out.println(doctor.getProfession());
+        try {
+            doctor.setProfession(Profession.valueOf(profStr));
+            System.out.println(doctor.getProfession());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Please choose correct profession");
+        }
     }
 
     private static void printAllPatientsByDoctor() {
